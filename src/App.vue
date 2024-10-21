@@ -7,7 +7,7 @@
     return response.json()
   }
 
-  const { data } = useQuery(['todo'], fetchData)
+  const { data } = useQuery({ queryKey: ['todo'], queryFn: fetchData })
 
  </script>
 
